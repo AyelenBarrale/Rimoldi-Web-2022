@@ -1,0 +1,26 @@
+@import '../vars.scss';
+@import '../mixins';
+
+.footer_container {
+    background-color: $bg-color-2;
+    @include grid-hor (10fr 2fr, 36px 190px);
+    .footer_item_1 .h4_text {
+        font-size: $h4;
+    }
+}
+
+.footer_item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    background: transparent;
+    i {
+        &:hover {
+            color: $txt-color-2;
+            cursor: pointer;
+        }
+    }
+    a {
+        @include link ($p);
+    }
+}

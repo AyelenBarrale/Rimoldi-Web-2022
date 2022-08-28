@@ -1,0 +1,39 @@
+@import '../vars.scss';
+
+.navbar_nav {
+    position: fixed;
+    width: 100%;
+    transition: all .3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $nav-bg-color;
+    padding: 0.5% 10%;
+    .logo {
+        width: 100%;
+    }
+
+    .nav_menu {
+        display: flex;
+        gap: 1rem;
+        list-style-type: none;
+        .nav_link {
+            a {
+                border: 0;
+                outline: none;
+                text-decoration: none;
+                &:hover {
+                    cursor: pointer;
+                }
+                }
+            &:hover {
+                cursor: pointer;
+                color: $hov-color;
+                text-decoration: none;
+            }
+        }  
+    }
+}
+
+
+
