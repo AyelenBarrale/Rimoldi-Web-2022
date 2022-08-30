@@ -1,14 +1,9 @@
 import '../styles/globals.scss'
-import type {AppProps } from 'next/App'
-import dynamic from 'next/dynamic'
+import type {AppProps } from 'next/app'
 
-const Layout = dynamic(() => import ('../components/Layout'))
-
-function MyApp({ Component, pageProps } : AppProps) {
+const MyApp: React.FC<AppProps> = ({ Component, pageProps } : AppProps) => {
   return (
-    <Layout>
       <Component {...pageProps} />
-    </Layout>
   )
 }
 

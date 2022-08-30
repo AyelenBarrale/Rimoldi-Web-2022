@@ -1,7 +1,5 @@
-import dynamic from 'next/dynamic'
-import style from '../styles/components/footer.module.scss'
-
-const Head = dynamic(() => import('next/Head'))
+import Head from 'next/head'
+import style from '../../../styles/components/generalComponents/footer.module.scss'
 
 const Footer = () => {
     return (

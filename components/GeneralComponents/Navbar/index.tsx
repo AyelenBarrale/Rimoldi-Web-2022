@@ -1,10 +1,10 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
-import logo from '../public/assets/general/logo.webp'
-import style from '../styles/components/navbar.module.scss'
+import logo from '../../../public/assets/general/logo.webp'
+import style from '../../../styles/components/generalComponents/navbar.module.scss'
 
-const Link = dynamic(() => import('next/Link'))
-const Image = dynamic(() => import('next/Image'))
+const Link = dynamic(() => import('next/link'))
+const Image = dynamic(() => import('next/image'))
 
 const Navbar = () => {
     const menuItems = [

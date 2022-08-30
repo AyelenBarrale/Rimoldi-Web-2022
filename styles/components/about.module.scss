@@ -1,0 +1,16 @@
+@import '../vars.scss';
+@import '../mixins';
+
+.about_container {
+    display: grid;
+    grid-template-columns: 40% 60% ;
+    grid-template-rows: auto;
+    margin: 10% 18%;
+    .item_1 {
+        padding-top: 2%;
+        .ab_h3_text {
+            @include text ($h1, 500);
+            color: $txt-color-2;
+        }
+    }
+}
