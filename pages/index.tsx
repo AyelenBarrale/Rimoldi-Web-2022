@@ -6,6 +6,7 @@ const Navbar = dynamic(() => import('../components/GeneralComponents/Navbar/inde
 const Footer = dynamic(() => import('../components/GeneralComponents/Footer/index'))
 const About = dynamic(() => import('../components/About'))
 const Works = dynamic(() => import('../components/Works'))
+const Contact = dynamic(() => import('../components/Contact'))
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Navbar />
       <About />
       <Works />
+      <Contact />
       <Footer />
     </div>
 

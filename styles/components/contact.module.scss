@@ -1,0 +1,35 @@
+@import '../vars.scss';
+@import '../mixins';
+@import '../extends';
+
+.contact_container {
+    @include grid-2 (10% 18%);
+    .contact-item {
+        text-align: left;
+    }
+    .item_form {
+        padding-top: 5%;
+    }
+}
+
+.h3_text {
+    color: $txt-color-2;
+    font-size: $p;
+}
+.p_text {
+    font-size: $p;
+    color: $txt-color;
+    padding-top: 1%;
+}
+
+.line {
+    @extend %line;
+}
+
+.contact_item {
+    .h1_text {
+        color: $txt-color;
+        font-size: $h1;
+        font-weight:500; 
+    }
+}
