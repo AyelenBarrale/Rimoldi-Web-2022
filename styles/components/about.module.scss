@@ -1,5 +1,6 @@
 @import '../vars.scss';
 @import '../mixins';
+@import '../extends';
 
 .about_container {
     display: grid;
@@ -13,4 +14,24 @@
             color: $txt-color-2;
         }
     }
+}
+
+.h1_text {
+    color: $txt-color;
+    font-size: $h1;
+    font-weight:500; 
+}
+
+.h3_text {
+    color: $txt-color-2;
+    font-size: $p;
+}
+.p_text {
+    font-size: $p;
+    color: $txt-color;
+    padding-top: 1.5rem;
+}
+
+.line {
+    @extend %line;
 }

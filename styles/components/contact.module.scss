@@ -19,7 +19,8 @@
 .p_text {
     font-size: $p;
     color: $txt-color;
-    padding-top: 1%;
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .line {
@@ -31,5 +32,34 @@
         color: $txt-color;
         font-size: $h1;
         font-weight:500; 
+    }
+}
+
+.form {
+    .form_row {
+        @extend %flex-rev;
+        margin: 3% 0 5% 0;
+    }
+    
+    .form_row input#name, .form_row input#email, .form_row input#subject, .form_row textarea {
+        @include form (0.5px solid rgba(235, 235, 230, 0.87), 0.5% 0%, 100%);
+        padding: 1%;
+        border-radius: 3px;
+    }
+    .form_row input#name::placeholder, .form_row input#name::placeholder, .form_row input#name::placeholder, textarea::placeholder {
+            color: $bg-color-2;
+            padding: 1%;
+        }
+    .form_row button {
+        @include button (1% 5%);
+        color: $txt-color;
+        background-color: $txt-color-2;
+        width: 30%;
+        justify-content: end;
+        &:hover {
+            cursor: pointer;
+            background-color: $hov-color;
+            color: $bg-color-2;
+        }
     }
 }
