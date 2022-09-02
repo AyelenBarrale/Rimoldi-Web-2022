@@ -1,0 +1,43 @@
+@import '../../vars.scss';
+
+.container {
+    margin: 0 15% 10% 15%;
+    .wip {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        margin: 5rem 0;
+        .calendar {
+            display: flex;
+            flex-direction: column;
+
+            .year {
+                font-size: $p;
+                font-weight: 400;
+                text-align: end;
+                margin: 0;
+            }
+            .date {
+                font-size: $p;
+                font-weight: 400;
+                padding-top: 0.3rem;
+                margin: 0;
+                text-align: end;
+                color: $txt-color-2;
+            }
+        }
+        .title {
+            font-size: $h1;
+            font-weight: 600;
+            margin: 0;
+        }
+    }
+    
+    .video_description {
+        p {
+            font-size: $p;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+}

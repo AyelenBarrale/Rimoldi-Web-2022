@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic'
-import Link from 'next/link'
 import style from '../styles/components/pages/404.module.scss'
+const Link = dynamic(() => import('next/link'))
 
 const Head = dynamic(() => import('../components/GeneralComponents/Head/index'))
 const Navbar = dynamic(() => import('../components/GeneralComponents/Navbar/index'))

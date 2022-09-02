@@ -1,0 +1,28 @@
+@keyframes autoplay2 {
+    0% {top: 100%}
+    4% {top: 0%}
+    33.33% {top: 0%}
+    37.33% {top: -100%}
+    100% {top: -100%}
+}
+.slider_container {
+    #slider_carousel {
+        position: relative;
+        overflow: hidden;
+        .slider_one .slider_two .slider_three {
+            position: absolute; 
+            top: 100%; 
+            left: 0;
+            animation: 12s autoplay2 infinite ease-in-out;
+        }
+        .slider_one {
+            animation-delay: 0s;
+        }
+        .slider_two {
+            animation-delay: 4s;
+        }
+        .slider_three {
+            animation-delay: 8s;
+        }
+    }
+}
