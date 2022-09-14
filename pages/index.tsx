@@ -1,4 +1,7 @@
 import dynamic from 'next/dynamic'
+import type { GetStaticProps } from 'next'
+import { collection, getDocs, query } from 'firebase/firestore'
+import { db } from '../firebase'
 import style from '../styles/components/pages/home.module.scss'
 
 const Head = dynamic(() => import('../components/GeneralComponents/Head/index'))
@@ -8,7 +11,7 @@ const About = dynamic(() => import('../components/About'))
 const Works = dynamic(() => import('../components/Works'))
 const Contact = dynamic(() => import('../components/Contact'))
 
-export default function Home() {
+export default function Home({works } : any) {
   return (
     <div className={style.general_container} >
       <Head 
@@ -17,10 +20,32 @@ export default function Home() {
       />
       <Header />
       <About />
-      <Works />
+      <Works worksList={works} />
       <Contact />
       <Footer />
     </div>
 
   )
+}
+
+export const getStaticProps : GetStaticProps = async (): Promise<any>  => {  
+  const works : any[] = []  
+  try {
+      const docRef = query(collection(db, 'works'))
+      const docSnap = await getDocs(docRef)
+      docSnap.forEach((doc) => {
+          works.push({
+              id: doc.id,
+              ...doc.data()
+          })
+      })
+  } catch (error) {
+      console.log(error)
+  }
+
+  return {
+      props: {
+          works
+      }
+  }
 }
