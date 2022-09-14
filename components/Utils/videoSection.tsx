@@ -5,7 +5,7 @@ const VimeoEmbed = dynamic(() => import('./vimeoEmbed'))
 
 const VideoSection = () => {
     const worksInProgress = [
-        {id:'259784444', date: 'March', year: '2021', title: 'Test BB8 Animation', description: 'Test BB8 animation made in AE with Element3D<'}, 
+        {id:'259784444', date: 'March', year: '2021', title: 'Test BB8 Animation', description: 'Test BB8 animation made in AE with Element3D'}, 
         {id:'254497683', date: 'February', year: '2021', title: 'Test UFO Animation', description: 'Test "UFO Shower" animation made in AE with Element3D'}
     ]
 

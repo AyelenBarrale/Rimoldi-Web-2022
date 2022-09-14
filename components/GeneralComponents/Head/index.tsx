@@ -4,10 +4,11 @@ import { CustomHeadProps } from '../../../types'
 
 const CustomHead: React.FC<CustomHeadProps> = ({ title, description, robots = true, rest }: CustomHeadProps) => {
 	const router = useRouter()
+	const mainTitle = `${title} | Rimoldi. Graphic Design`
 
 	return (
 		<Head>
-			<title>{title} | Rimoldi. Graphic Design</title>
+			<title>{mainTitle}</title>
 			<meta
 				name="description"
 				content={description}
