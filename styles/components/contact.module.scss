@@ -41,21 +41,23 @@
         margin: 3% 0 5% 0;
     }
     
-    .form_row input#name, .form_row input#email, .form_row input#subject, .form_row textarea {
+    .form_row .inputName, .form_row .inputEmail, .form_row .inputSubject, .form_row textarea {
         @include form (0.5px solid rgba(235, 235, 230, 0.87), 0.5% 0%, 100%);
         padding: 1%;
         border-radius: 3px;
+        font-family: 'Inter';
+        font-size: 1rem;
     }
-    .form_row input#name::placeholder, .form_row input#name::placeholder, .form_row input#name::placeholder, textarea::placeholder {
+    .form_row .inputEmail::placeholder, .form_row .inputName::placeholder, .form_row .inputSubject::placeholder, textarea::placeholder {
             color: $bg-color-2;
-            padding: 1%;
+            padding: 2% 1%;
         }
     .form_row button {
-        @include button (1% 5%);
+        @include button (2% 2%);
         color: $txt-color;
+        font-size: 1rem;
         background-color: $txt-color-2;
-        width: 30%;
-        justify-content: end;
+        width: 25%;
         &:hover {
             cursor: pointer;
             background-color: $hov-color;
