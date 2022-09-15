@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import dynamic from 'next/dynamic'
 import { IWork } from '../types/IWork'
 import style from '../styles/components/works.module.scss'
