@@ -46,6 +46,7 @@ export const getStaticProps : GetStaticProps = async (): Promise<any>  => {
   return {
       props: {
           works
-      }
+      },
+      revalidate: 1
   }
 }

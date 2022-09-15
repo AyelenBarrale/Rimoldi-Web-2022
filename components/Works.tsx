@@ -1,22 +1,34 @@
+import React, {useState} from 'react'
 import dynamic from 'next/dynamic'
 import style from '../styles/components/works.module.scss'
 
 const Image = dynamic(() => import('next/image'))
 
 const Works = ({worksList } : any) => {
-    console.log(worksList)
+    const [worksToMap, setWorksToMap] = useState<any[]>(worksList)
+
+    const worksFiltered = (array : any[], type : string) => {
+        const works = array?.filter((work) => {return work.workType === type})
+        if(works?.length === 0) {
+            setWorksToMap(array)
+        } else {
+            setWorksToMap(works)
+        }
+    }
+
     return(
         <>
             <section className={style.work_container}>
                 <div className={style.filterBar}>
                 <ul className={style.filterList}>
-                    <li className={style.filterList_Item} >All</li>
-                    <li className={style.filterList_Item} >Branding</li>
-                    <li className={style.filterList_Item} >Photo Manipulation</li>
+                    <li className={style.filterList_Item} onClick={() => {worksFiltered(worksList, 'All')}} >All</li>
+                    <li className={style.filterList_Item} onClick={() => {worksFiltered(worksList, 'Branding')}} >Branding</li>
+                    <li className={style.filterList_Item} onClick={() => {worksFiltered(worksList, 'Photo Manipulation')}} >Photo Manipulation</li>
                 </ul>
                 </div>
+
                 <div className={style.workGrid}>
-                    {worksList && worksList?.map((work : any) => (
+                    {worksToMap && worksToMap?.map((work : any) => (
                         <div className={style.workItem_container} key={work.id}>
                             <div className={style.workItem}>
                                 <div className={style.text}>
