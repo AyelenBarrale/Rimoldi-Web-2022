@@ -2,6 +2,7 @@ import dynamic from 'next/dynamic'
 import type { GetStaticProps } from 'next'
 import { collection, getDocs, query } from 'firebase/firestore'
 import { db } from '../firebase'
+import { IWork } from '../types/IWork'
 import style from '../styles/components/pages/home.module.scss'
 
 const Head = dynamic(() => import('../components/GeneralComponents/Head/index'))
@@ -11,7 +12,11 @@ const About = dynamic(() => import('../components/About'))
 const Works = dynamic(() => import('../components/Works'))
 const Contact = dynamic(() => import('../components/Contact'))
 
-export default function Home({works } : any) {
+interface Props {
+	works: IWork[]
+}
+
+export default function Home({works } : Props) {
   return (
     <div className={style.general_container} >
       <Head 
@@ -20,15 +25,19 @@ export default function Home({works } : any) {
       />
       <Header />
       <About />
-      <Works worksList={works} />
+      <Works works={works} />
       <Contact />
       <Footer />
     </div>
 
   )
 }
+interface StaticProps {
+	props: Props,
+	revalidate: number
+}
 
-export const getStaticProps : GetStaticProps = async (): Promise<any>  => {  
+export const getStaticProps : GetStaticProps = async (): Promise<StaticProps>  => {  
   const works : any[] = []  
   try {
       const docRef = query(collection(db, 'works'))
