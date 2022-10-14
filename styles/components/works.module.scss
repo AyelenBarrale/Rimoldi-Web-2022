@@ -72,6 +72,12 @@
                     background: rgba(0, 0, 0, 0.8);
                     padding-top: 40%;
                     color: $txt-color;
+
+                    .aTag {
+                        text-decoration: inherit;
+                        color: inherit;
+                        display: inherit;
+                    }
                     
                     h2 {
                         font-size: 2rem;

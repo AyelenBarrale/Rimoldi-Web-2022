@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import { IWork } from '../types/IWork'
 import style from '../styles/components/works.module.scss'
 
+const Link = dynamic(() => import('next/link'))
 const Image = dynamic(() => import('next/image'))
 
 interface Props {
@@ -37,8 +38,12 @@ const Works = ({works } : Props) => {
                         <div className={style.workItem_container} key={work.id}>
                             <div className={style.workItem}>
                                 <div className={style.text}>
-                                    <h2>{work.title}</h2>
-                                    <p>{work.subtitle}</p>
+                                    <Link href={`/works/${work.slug}`}>
+                                        <a className={style.aTag}>
+                                            <h2>{work.title}</h2>
+                                            <p>{work.subtitle}</p>
+                                        </a>
+                                    </Link>
                                 </div>
                                 <div className={style.imageItem}>
                                     <Image
