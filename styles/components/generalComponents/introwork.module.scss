@@ -1,0 +1,57 @@
+@import '../../vars.scss';
+@import '../../mixins';
+@import '../../extends';
+
+.intro_container {
+    display: grid;
+    grid-template-columns: 40% 60% ;
+    grid-template-rows: auto;
+    @extend %margin-container;
+    .intro_left {
+      .intro_title {
+        .intro_h1 {
+          font-size: $h1;
+          font-weight: 600;
+          color: $txt-color;
+          margin: inherit;
+        }
+        .intro_h2 {
+          font-size: $h1;
+          font-weight: 600;
+          color: $txt-color-2;
+          margin: inherit;
+        }
+        .line {
+            @extend %line;
+        }
+      }
+      .details_work {
+        padding-top: 5%;
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+        .details_1 {
+          font-size: $h3;
+          font-weight: 400;
+          color: $txt-color;
+          margin: inherit;
+        }
+        .details_2 {
+          font-size: $h3;
+          font-weight: 400;
+          color: $txt-color-2;
+          padding-left: 1%;
+          margin: inherit;
+        }
+      }
+    }
+    .intro_right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .intro_p {
+            margin: inherit;
+        }
+    }
+  }
