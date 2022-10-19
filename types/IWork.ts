@@ -17,5 +17,9 @@ export interface IWork {
     video?: string,
     slug?: string,
     id?: string,
-    imageFull?: string,
+    imageFull?: string |StaticImageData,
+    imageTop?: string |StaticImageData,
+    detailImageI?: string |StaticImageData,
+    detailImageII?: string |StaticImageData,
+    resourceImage?: string |StaticImageData
 }

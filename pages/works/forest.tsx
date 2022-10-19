@@ -24,33 +24,56 @@ const Forest = ({works} : Props) => {
     return(
         <div className={style.main_container} >
             <Navbar />
+            <div className={style.topimage_container}>
+                <Image
+                    src={work.imageTop}
+                    alt='Santiago Rimoldi, graphic designer and photoshop artist'
+                    layout="responsive"
+                    height="675"
+                    width="2500"
+                />
+            </div>
             <Intro work={work} />
             <div className={style.forest_container}>
-                <div className={style.iamge_container}>
+                <div className={style.images_container}>
                     <Image
                         src={work.imageFull}
                         alt={'Final product about this photo manipulation'}
                         layout="responsive"
-                        height='100hv'
-                        width='100vw'
+                        height='904'
+                        width='1357'
                     />
+                    <div className={style.images_detail}>
+                        <div>
+                            <Image
+                                src={work.detailImageI}
+                                alt={'Final product about this photo manipulation'}
+                                layout="responsive"
+                                height='350'
+                                width='700'
+                            />
+                        </div>
+                        <div>
+                            <Image
+                                src={work.detailImageII}
+                                alt={'Final product about this photo manipulation'}
+                                layout="responsive"
+                                height='350'
+                                width='700'
+                            />
+                        </div>
+                    </div>
+                    <Image
+                        src={work.resourceImage}
+                        alt={'Final product about this photo manipulation'}
+                        layout="responsive"
+                        height='581'
+                        width='1357'
+                    />
+                    <div className={style.iframe_container}>
+                        <iframe className={style.responsive_iframe} title="image_process" src="https://player.vimeo.com/video/281368495" frameBorder="0" allowFullScreen></iframe>
+                    </div>
                 </div>
-                {/* <img src="./../../img/03 - Forest/03_Forest_Full.jpg" alt="Final product about this photo manipulation">
-                </div>
-                <div className="row">
-                <div className="col-12 col-md-6 col-lg-6">
-                    <img className="w-100" src="./../../img/03 - Forest/03_Forest_Detail_01.jpg" alt="detail of girl montage">
-                </div>
-                <div className="col-12 col-md-6 col-lg-6">
-                    <img className="w-100" src="./../../img/03 - Forest/03_Forest_Detail_02.jpg" alt="detail of bear montage">
-                </div>
-                </div>
-                <div>
-                    <img src="./../../img/03 - Forest/03_Forest_Resources.jpg" alt="resources used on this forest photo manipulation">
-                </div> */}
-                {/* <div className="video_container">
-                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/281368495" width="640" height="360" frameBorder="0" allowFullScreen></iframe>
-                </div> */}
             </div>
             <Footer />
         </div>
