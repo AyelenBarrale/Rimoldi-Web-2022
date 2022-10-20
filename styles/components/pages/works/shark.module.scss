@@ -1,3 +1,16 @@
 .main_container {
     height: 100vh;
+    .topimage_container {
+        display: "block";
+        position: "relative";
+    }
+    .shark_container {
+        margin: 0% 18% 6% 18%;
+        .images_detail {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+            margin: 0.5rem 0 0.5rem 0;
+        }
+    }
 }

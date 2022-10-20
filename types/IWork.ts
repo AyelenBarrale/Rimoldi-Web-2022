@@ -21,5 +21,8 @@ export interface IWork {
     imageTop?: string |StaticImageData,
     detailImageI?: string |StaticImageData,
     detailImageII?: string |StaticImageData,
-    resourceImage?: string |StaticImageData
+    detailImageIII?: string |StaticImageData,
+    detailImageIV?: string |StaticImageData,
+    resourceImage?: string |StaticImageData,
+    logos?: string[]
 }
