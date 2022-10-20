@@ -14,7 +14,7 @@ export interface IWork {
     blockImage?: string |StaticImageData,
     gif?: string,
     singleImage?: string |StaticImageData,
-    video?: string,
+    videoUrl?: string,
     slug?: string,
     id?: string,
     imageFull?: string |StaticImageData,
@@ -24,5 +24,5 @@ export interface IWork {
     detailImageIII?: string |StaticImageData,
     detailImageIV?: string |StaticImageData,
     resourceImage?: string |StaticImageData,
-    logos?: string[]
+    logos?: string[],
 }

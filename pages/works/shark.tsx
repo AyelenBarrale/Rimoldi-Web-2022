@@ -24,7 +24,7 @@ const Shark = ({works} : Props) => {
             <Navbar />
             <div className={style.topimage_container}>
                 <Image
-                    src={work.imageTop}
+                    src={work?.imageTop}
                     alt='Santiago Rimoldi, graphic designer and photoshop artist'
                     layout="responsive"
                     height="675"
@@ -35,7 +35,7 @@ const Shark = ({works} : Props) => {
             <div className={style.shark_container}>
                 <div className={style.images_container}>
                     <Image
-                        src={work.imageFull}
+                        src={work?.imageFull}
                         alt={'Final product about this photo manipulation'}
                         layout="responsive"
                         height='1100'
@@ -44,7 +44,7 @@ const Shark = ({works} : Props) => {
                     <div className={style.images_detail}>
                         <div>
                             <Image
-                                src={work.detailImageI}
+                                src={work?.detailImageI}
                                 alt={'Final product about this photo manipulation'}
                                 layout="responsive"
                                 height='350'
@@ -53,7 +53,7 @@ const Shark = ({works} : Props) => {
                         </div>
                         <div>
                             <Image
-                                src={work.detailImageII}
+                                src={work?.detailImageII}
                                 alt={'Final product about this photo manipulation'}
                                 layout="responsive"
                                 height='350'
@@ -63,7 +63,7 @@ const Shark = ({works} : Props) => {
                     </div>
                     <div className={style.images_detail}>
                         <Image
-                            src={work.resourceImage}
+                            src={work?.resourceImage}
                             alt={'Final product about this photo manipulation'}
                             layout="responsive"
                             height='581'
@@ -71,7 +71,7 @@ const Shark = ({works} : Props) => {
                         />
                     </div>
                     <Image
-                        src={work.gif}
+                        src={work?.gif}
                         alt={'Final product about this photo manipulation'}
                         layout="responsive"
                         height='1100'
