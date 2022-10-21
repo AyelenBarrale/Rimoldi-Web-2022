@@ -11,9 +11,10 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 0.5rem;
             margin: 0.5rem 0 0.5rem 0;
-        }
-        .video_container {
-            
+            .video_container video {
+                max-width: 100%;
+                height: auto;
+            }
         }
         .iframe_container {
             position: relative;

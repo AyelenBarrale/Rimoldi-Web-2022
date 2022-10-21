@@ -51,13 +51,13 @@ const Sunsrace = ({works} : Props) => {
                     <div className={style.images_detail}>
                         <div className={style.video_container}>
                             <video
-                                src={work.videoUrl}
-                                typeof="video/mp4"
                                 loop
                                 autoPlay
                                 controls
                                 poster={work.videoUrl}
-                            ></video>
+                            >
+                                <source src={work.videoUrl} typeof="video/mp4"/>
+                            </video>
                         </div>
                         <div>
                             <Image
@@ -69,15 +69,8 @@ const Sunsrace = ({works} : Props) => {
                             />
                         </div>
                     </div>
-                    <Image
-                        src={work.resourceImage}
-                        alt={'Final product about this photo manipulation'}
-                        layout="responsive"
-                        height='581'
-                        width='1357'
-                    />
                     <div className={style.iframe_container}>
-                        <iframe className={style.responsive_iframe} title="image_process" src="https://player.vimeo.com/video/281368495" frameBorder="0" allowFullScreen></iframe>
+                        <iframe className={style.responsive_iframe} title="image_process" src="https://player.vimeo.com/video/254495842" frameBorder="0" allowFullScreen></iframe>
                     </div>
                 </div>
             </div>
