@@ -26,7 +26,7 @@ const FormContact = () => {
                 </div>
             </form>
             <div>
-                {clicked && <p>{`Thanks, your message was send. I'll contact you soon!`}</p>
+                {clicked && <p>{`Sorry, the mail couldn't be sent. Please contact me at the email indicated above.`}</p>
                 }
                 <p id='thanxContact'></p>
             </div>

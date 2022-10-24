@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
                     <div className={style.line}></div>
                 </div>
                 <div className={[style.contact_item, style.item_form].join(" ")}>
-                    <p className={style.p_text}>To contact me for project enquiries, please fill this contact form or send me an email to info@santiagorimoldi.com</p>
+                    <span className={style.p_text}>To contact me for project enquiries, please fill this contact form or send me an email to <a href="mailto: [santi.rimoldi@gmail.com]?subject=contact-from-website" className={style.p_text_mail} > <span>info@santiagorimoldi.com</span> </a></span>
                     <FormContact />
                 </div>
             </div>
