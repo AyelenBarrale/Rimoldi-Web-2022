@@ -45,7 +45,8 @@ const Utah = ({works} : Props) => {
                         <div>
                             <Image
                                 src={work.detailImageI}
-                                alt={'Final product about this photo manipulation'}
+                                alt={''}
+                                aria-hidden='true'
                                 layout="responsive"
                                 height='350'
                                 width='700'
@@ -54,7 +55,8 @@ const Utah = ({works} : Props) => {
                         <div>
                             <Image
                                 src={work.detailImageII}
-                                alt={'Final product about this photo manipulation'}
+                                alt={''}
+                                aria-hidden='true'
                                 layout="responsive"
                                 height='350'
                                 width='700'
@@ -63,7 +65,8 @@ const Utah = ({works} : Props) => {
                     </div>
                     <Image
                         src={work.resourceImage}
-                        alt={'Final product about this photo manipulation'}
+                        alt={''}
+                        aria-hidden='true'
                         layout="responsive"
                         height='420'
                         width='1400'
@@ -71,7 +74,8 @@ const Utah = ({works} : Props) => {
                     <div className={style.gif}>
                         <Image
                             src={work.gif}
-                            alt={'Final product about this photo manipulation'}
+                            alt={''}
+                            aria-hidden='true'
                             layout="responsive"
                             height='700'
                             width='1400'

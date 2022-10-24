@@ -13,7 +13,8 @@ const WipPage: React.FC = () => {
             <Navbar />
             <Image
                 src={headerImage}
-                alt='Santiago Rimoldi, graphic designer and photoshop artist'
+                alt=''
+                aria-hidden='true'
                 priority
             />
             <VideoSection />

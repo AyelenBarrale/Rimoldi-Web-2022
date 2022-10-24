@@ -45,7 +45,8 @@ const Shark = ({works} : Props) => {
                         <div>
                             <Image
                                 src={work?.detailImageI}
-                                alt={'Final product about this photo manipulation'}
+                                alt={''}
+                                aria-hidden='true'
                                 layout="responsive"
                                 height='350'
                                 width='700'
@@ -54,7 +55,8 @@ const Shark = ({works} : Props) => {
                         <div>
                             <Image
                                 src={work?.detailImageII}
-                                alt={'Final product about this photo manipulation'}
+                                alt={''}
+                            aria-hidden='true'
                                 layout="responsive"
                                 height='350'
                                 width='700'
@@ -64,7 +66,8 @@ const Shark = ({works} : Props) => {
                     <div className={style.images_detail}>
                         <Image
                             src={work?.resourceImage}
-                            alt={'Final product about this photo manipulation'}
+                            alt={''}
+                            aria-hidden='true'
                             layout="responsive"
                             height='581'
                             width='1357'
@@ -72,7 +75,8 @@ const Shark = ({works} : Props) => {
                     </div>
                     <Image
                         src={work?.gif}
-                        alt={'Final product about this photo manipulation'}
+                        alt={''}
+                        aria-hidden='true'
                         layout="responsive"
                         height='1100'
                         width='1400'

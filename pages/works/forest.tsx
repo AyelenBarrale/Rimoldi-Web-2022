@@ -47,7 +47,8 @@ const Forest = ({works} : Props) => {
                         <div>
                             <Image
                                 src={work.detailImageI}
-                                alt={'Final product about this photo manipulation'}
+                                alt={''}
+                                aria-hidden='true'
                                 layout="responsive"
                                 height='350'
                                 width='700'
@@ -56,7 +57,8 @@ const Forest = ({works} : Props) => {
                         <div>
                             <Image
                                 src={work.detailImageII}
-                                alt={'Final product about this photo manipulation'}
+                                alt={''}
+                                aria-hidden='true'
                                 layout="responsive"
                                 height='350'
                                 width='700'
@@ -65,7 +67,7 @@ const Forest = ({works} : Props) => {
                     </div>
                     <Image
                         src={work.resourceImage}
-                        alt={'Final product about this photo manipulation'}
+                        alt={'Resources used on this photo manipulation'}
                         layout="responsive"
                         height='581'
                         width='1357'

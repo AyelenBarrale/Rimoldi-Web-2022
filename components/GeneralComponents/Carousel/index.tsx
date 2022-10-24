@@ -45,12 +45,12 @@ const Carousel = (props : Props) => {
         <div className={style.carousel}>
             <div className={[style.item, loaded && style.loaded].join(" ")}>
                 <Image 
-                src={require(`../../../public/assets/general/${selectedImage}`).default}
-                alt={''}
-                priority
-                width={'2048px'}
-                height={'1152px'}
-                onLoad={() => setLoaded(true)}
+                  src={require(`../../../public/assets/general/${selectedImage}`).default}
+                  alt={''}
+                  priority
+                  width={'2048px'}
+                  height={'1152px'}
+                  onLoad={() => setLoaded(true)}
                 />
             </div>
           <div>

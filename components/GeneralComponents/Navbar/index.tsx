@@ -39,7 +39,7 @@ const Navbar = () => {
 								<a>
 									<Image
 										src={logo}
-										alt='Santiago Rimoldi. Graphic Designer'
+										alt='Santiago Rimoldi. Graphic Designer. Logo'
 										priority
 										width='200px'
 										height='31,5px'

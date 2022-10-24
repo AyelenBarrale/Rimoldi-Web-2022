@@ -44,7 +44,8 @@ const Lighthouse = ({works} : Props) => {
                         <div>
                             <Image
                                 src={work.detailImageI}
-                                alt={'Final product about this photo manipulation'}
+                                alt={''}
+                                aria-hidden='true'
                                 layout="responsive"
                                 height='350'
                                 width='700'
@@ -53,7 +54,8 @@ const Lighthouse = ({works} : Props) => {
                         <div>
                             <Image
                                 src={work.detailImageII}
-                                alt={'Final product about this photo manipulation'}
+                                alt={''}
+                                aria-hidden='true'
                                 layout="responsive"
                                 height='350'
                                 width='700'
@@ -62,7 +64,7 @@ const Lighthouse = ({works} : Props) => {
                     </div>
                     <Image
                         src={work.resourceImage}
-                        alt={'Final product about this photo manipulation'}
+                        alt={'resource images used in this photo manipulation'}
                         layout="responsive"
                         height='581'
                         width='1357'
@@ -71,7 +73,8 @@ const Lighthouse = ({works} : Props) => {
                         <div>
                             <Image
                                 src={work.detailImageIII}
-                                alt={'Final product about this photo manipulation'}
+                                alt={''}
+                                aria-hidden='true'
                                 layout="responsive"
                                 height='1000'
                                 width='1000'
@@ -80,7 +83,8 @@ const Lighthouse = ({works} : Props) => {
                         <div>
                             <Image
                                 src={work.gif}
-                                alt={'Final product about this photo manipulation'}
+                                alt={''}
+                                aria-hidden='true'
                                 layout="responsive"
                                 height='1000'
                                 width='1000'

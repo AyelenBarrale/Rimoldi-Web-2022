@@ -39,7 +39,7 @@ const Logos = ({works} : Props) => {
                                 <div key={logo}>
                                     <Image
                                         src={logo}
-                                        alt={'Final product about this photo manipulation'}
+                                        alt={'List of logos created'}
                                         layout="responsive"
                                         height='350'
                                         width='1300'

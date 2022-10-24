@@ -36,14 +36,16 @@ const Sunsrace = ({works} : Props) => {
                 <div className={style.images_container}>
                     <Image
                         src={work.detailImageI}
-                        alt={'Final product about this photo manipulation'}
+                        alt={''}
+                        aria-hidden='true'
                         layout="responsive"
                         height='904'
                         width='1357'
                     />
                     <Image
                         src={work.detailImageII}
-                        alt={'Final product about this photo manipulation'}
+                        alt={''}
+                        aria-hidden='true'
                         layout="responsive"
                         height='904'
                         width='1357'
@@ -62,7 +64,8 @@ const Sunsrace = ({works} : Props) => {
                         <div>
                             <Image
                                 src={work.detailImageIII}
-                                alt={'Final product about this photo manipulation'}
+                                alt={''}
+                                aria-hidden='true'
                                 layout="responsive"
                                 height='1680'
                                 width='1200'

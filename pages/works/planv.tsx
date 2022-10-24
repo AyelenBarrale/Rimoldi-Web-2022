@@ -35,14 +35,14 @@ const Planv = ({works} : Props) => {
                 <div className={style.images_container}>
                     <Image
                         src={work.detailImageI}
-                        alt={'Final product about this photo manipulation'}
+                        alt={'Detail image about this branding design'}
                         layout="responsive"
                         height='3500'
                         width='1400'
                     />
                     <Image
                         src={work.detailImageII}
-                        alt={'Final product about this photo manipulation'}
+                        alt={'Detail image about this branding design'}
                         layout="responsive"
                         height='885'
                         width='850'
